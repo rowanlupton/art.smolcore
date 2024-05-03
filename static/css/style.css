@@ -619,13 +619,13 @@ body section#about {
 body section#about a {
   color: #ffecf7;
 }
-body section#testimonials div {
+body section#work div {
   margin: 2em 0;
 }
-body section#testimonials h2 {
+body section#work h2 {
   color: #ff53b4;
 }
-body section#testimonials p {
+body section#work p {
   text-indent: 2em;
 }
 body section#contact {
