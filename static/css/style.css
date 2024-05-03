@@ -490,11 +490,17 @@ body #grid-wrapper #sections {
   flex-direction: column;
   grid-row: 2/3;
   grid-column: 2/3;
+  width: 100vw;
 }
 @media screen and (max-width: 970px) {
   body #grid-wrapper #sections {
     grid-column: 1/4;
   }
+}
+body #grid-wrapper #sections section {
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 body #grid-wrapper #sections section#home {
   display: flex;
@@ -619,14 +625,45 @@ body section#about {
 body section#about a {
   color: #ffecf7;
 }
-body section#work div {
-  margin: 2em 0;
+body section#work {
+  background-color: #333333;
 }
 body section#work h2 {
-  color: #ff53b4;
+  color: #f8f8f8;
 }
-body section#work p {
+body section#work > div {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+body section#work > div h3 {
+  color: #ff53b4;
+  grid-column: 1/4;
+}
+body section#work > div p {
   text-indent: 2em;
+}
+body section#work > div p.title {
+  grid-column: 4/5;
+  text-align: right;
+  color: #c5c5c5;
+}
+body section#work > div ul.recognition {
+  grid-column: 1/5;
+  color: #f8f8f8;
+  display: inline;
+}
+body section#work > div div.trailer {
+  grid-column: 1/5;
+  justify-items: center;
+}
+body section#work > div div.separator {
+  grid-column: 2/4;
+  height: 10px;
+  border-radius: 50%;
+  width: 161.803px;
+  margin: 2em auto;
+  background-color: #ff0090;
 }
 body section#contact {
   color: #f8f8f8;

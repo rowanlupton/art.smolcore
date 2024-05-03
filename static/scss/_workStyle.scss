@@ -1,15 +1,61 @@
 // '_workStyle.scss'
 
 section#work {
-	div {
-		margin: 2em 0;
-	}
+    background-color: lighten($black-color, 20%);
 
 	h2 {
-		color: $secondary_color;
+		color: $white-color;
 	}
+    
+    >div {
+		margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
 
-	p {
-		text-indent: 2em;
+        h3 {
+            color: $secondary-color;
+            grid-column: 1 / 4;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+        p.title {
+            grid-column: 4 / 5;
+            text-align: right;
+            color: darken($white-color, 20%);
+        }
+        ul.recognition {
+            grid-column: 1 / 5;
+            color: $white-color;
+            display: inline;
+
+            li {
+
+            }
+        }
+        div.trailer {
+            grid-column: 1 / 5;
+            justify-items: center;
+        }
+
+        div.separator {
+            grid-column: 2 / 4;
+            height: $separator-height;
+            border-radius: 50%;
+            width: calc($separator-height * $separator-ratio);
+            margin: 2em auto;
+            background-color: $primary-color;
+        }
 	}
 }
+
+
+// <h2>Past Projects</h2>
+// <div>
+// 	<h3>The Secret Art of Human Flight</h2>
+// 	<p class="title">Chief Lighting Technician</p>
+// 	<p>TriBeCa 2023</p>
+// 	<div>embedded trailer goes here</div>
+// </div>

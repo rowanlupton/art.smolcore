@@ -6,3 +6,7 @@ $primary-color: #ff0090;
 $secondary-color: #ff53b4;
 $white-color: #f8f8f8;
 $black-color: #000000;
+
+$separator-height: 10px;
+$golden-ratio: 1.61803;
+$separator-ratio: calc($golden-ratio * 10)
