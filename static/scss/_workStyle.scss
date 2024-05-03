@@ -36,8 +36,9 @@ section#work {
             justify-self: center;
             position: relative;
             overflow: hidden;
-            width: 40%;
-            min-width: 400px;
+            width: 90%;
+            min-width: 350px;
+            max-width: 600px;
 
             &:after {
                 display: block;
