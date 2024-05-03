@@ -670,6 +670,7 @@ body section#work > div div.trailer {
   width: 90vw;
   min-width: 350px;
   max-width: 600px;
+  margin-top: 0.5em;
 }
 body section#work > div div.trailer:after {
   display: block;
