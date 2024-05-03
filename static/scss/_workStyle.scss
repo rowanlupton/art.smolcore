@@ -13,6 +13,7 @@ section#work {
         position: relative;
         grid-template-columns: repeat(4, 1fr);
         z-index: 1;
+        padding: 0.5em;
 
         h3 {
             color: $white-color;
@@ -84,6 +85,7 @@ section#work {
             top: 1em; bottom: -1em; left: -1em; right: 0;
             z-index: -1;
             background: linear-gradient(-150deg, $secondary-color, $black-color);
+            border-radius: 5px;
         }
 
         // &:not(:last-of-type):after {

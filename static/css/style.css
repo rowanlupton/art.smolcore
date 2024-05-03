@@ -642,6 +642,7 @@ body section#work > div {
   position: relative;
   grid-template-columns: repeat(4, 1fr);
   z-index: 1;
+  padding: 0.5em;
 }
 body section#work > div h3 {
   color: #f8f8f8;
@@ -697,6 +698,7 @@ body section#work > div:after {
   right: 0;
   z-index: -1;
   background: linear-gradient(-150deg, #ff53b4, #000000);
+  border-radius: 5px;
 }
 body section#contact {
   color: #f8f8f8;
