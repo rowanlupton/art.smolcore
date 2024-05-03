@@ -515,6 +515,7 @@ body header {
   background-color: #f8f8f8;
   opacity: 1;
   display: inline-block;
+  z-index: 1;
 }
 body header #topHeader {
   background-color: #f8f8f8;
@@ -656,9 +657,27 @@ body section#work > div ul.recognition {
 body section#work > div div.trailer {
   grid-column: 1/5;
   justify-self: center;
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  min-width: 400px;
+}
+body section#work > div div.trailer:after {
+  display: block;
+  content: "";
+}
+body section#work > div div.trailer.aspect16-9:after {
+  padding-top: 56.25%;
+}
+body section#work > div div.trailer.aspect4-3:after {
+  padding-top: 75%;
 }
 body section#work > div div.trailer iframe {
-  max-width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 body section#work > div div.separator {
   grid-column: 2/4;
