@@ -531,7 +531,18 @@ body header #topHeader .nowrap a {
 }
 body header #topHeader a {
   font-size: 2.5vw;
-  display: inline-block;
+  display: inline;
+}
+body header #topHeader a .picture {
+  position: relative;
+}
+body header #topHeader a .picture img {
+  height: 2em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: -1em;
+  right: 0;
 }
 body header #topHeader a .h {
   text-align: center;
@@ -571,16 +582,23 @@ body header #topHeader a .h:hover h2 {
   body header #topHeader .fa {
     font-size: 1.8rem;
   }
-}
-body header .img-container {
-  z-index: 4;
-  height: 10vw;
-  background-image: url(file:///C:/Users/rowan/OneDrive/Documents/Work-rowan_surface/website/static/img/smolcore.png);
-  background-position: 0% 75%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  box-shadow: 0 6px 5px -5px #000000;
+  body header #topHeader .h {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+  }
+  body header #topHeader a .picture {
+    display: block;
+    height: 40vw;
+    width: 100vw;
+  }
+  body header #topHeader a .picture img {
+    top: 0;
+    right: unset;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 body nav {
   font-family: "Pontano Sans", sans-serif;

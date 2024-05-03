@@ -18,7 +18,21 @@ header {
 
 		a {
 			font-size: 2.5vw;
-			display: inline-block;
+			display: inline;
+
+			.picture {
+				position: relative;
+				img {
+					height: 2em;
+					// width: 100%;
+					// vertical-align: middle;
+					object-fit: contain;	
+					position: absolute;
+					top: -1em;
+					right: 0;
+				}
+			}
+
 			.h {
 				text-align: center;
 				display: inline-block;
@@ -65,19 +79,36 @@ header {
 			.fa {
 				font-size: 1.8rem;
 			}
+			.h {
+				width: 100%;
+				margin: 0 auto;
+				margin-bottom: 0.5em;
+			}
+			a .picture {
+				display: block;
+				height: 40vw;
+				width: 100vw;
+				
+				img {
+					top: 0; right: unset;
+					height: 100%;
+					width: 100%;
+					margin: 0 auto;
+				}
+			}
 		}
 		
 	}
 
 
-	.img-container {
-		z-index: 4;
-		height: 10vw;
-		background-image: url(file:///C:/Users/rowan/OneDrive/Documents/Work-rowan_surface/website/static/img/smolcore.png);
-		background-position: 0% 75%;
-		background-size: 100%;
-		background-repeat: no-repeat;
-		overflow: hidden;
-		box-shadow: 0 6px 5px -5px $black-color;
-	}
+	// .img-container {
+	// 	z-index: 4;
+	// 	height: 10vw;
+	// 	background-image: url(file:///C:/Users/rowan/OneDrive/Documents/Work-rowan_surface/website/static/img/smolcore.png);
+	// 	background-position: 0% 75%;
+	// 	background-size: 100%;
+	// 	background-repeat: no-repeat;
+	// 	overflow: hidden;
+	// 	box-shadow: 0 6px 5px -5px $black-color;
+	// }
 }
