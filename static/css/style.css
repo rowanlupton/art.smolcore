@@ -657,6 +657,9 @@ body section#work > div div.trailer {
   grid-column: 1/5;
   justify-self: center;
 }
+body section#work > div div.trailer iframe {
+  max-width: 100vw;
+}
 body section#work > div div.separator {
   grid-column: 2/4;
   height: 10px;

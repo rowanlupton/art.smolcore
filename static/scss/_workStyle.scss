@@ -30,14 +30,14 @@ section#work {
             grid-column: 1 / 5;
             color: $white-color;
             display: inline;
-
-            li {
-
-            }
         }
         div.trailer {
             grid-column: 1 / 5;
             justify-self: center;
+
+            iframe {
+                max-width: 100vw;
+            }
         }
 
         div.separator {
