@@ -492,15 +492,19 @@ body #grid-wrapper #sections {
   grid-column: 2/3;
   width: 100vw;
 }
-@media screen and (max-width: 970px) {
-  body #grid-wrapper #sections {
-    grid-column: 1/4;
-  }
-}
 body #grid-wrapper #sections section {
   width: 80vw;
   padding-left: 10vw;
   padding-right: 10vw;
+}
+@media screen and (max-width: 970px) {
+  body #grid-wrapper #sections {
+    grid-column: 1/4;
+  }
+  body #grid-wrapper #sections section {
+    width: 96vw;
+    padding: 0 2vw;
+  }
 }
 body #grid-wrapper #sections section#home {
   display: flex;
@@ -659,7 +663,7 @@ body section#work > div div.trailer {
   justify-self: center;
   position: relative;
   overflow: hidden;
-  width: 90%;
+  width: 90vw;
   min-width: 350px;
   max-width: 600px;
 }
