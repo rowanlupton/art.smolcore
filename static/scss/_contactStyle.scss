@@ -1,0 +1,35 @@
+// '_contactStyle.scss'
+
+section#contact {
+	#contactMethods {
+		max-width: 90%;
+		height: auto;
+	}
+	div {
+		padding: 5vh 0;
+	}
+	@media (max-width: 576px) {
+		font-size: 0.8em;
+	}	
+
+	color: $white-color;
+	background-color: $primary-color;
+	
+	a {
+		color: $white-color;
+		text-decoration: none;
+
+		
+		&:hover {
+			.fab, .fas {
+				color: darken($secondary-color, 10%);
+				text-shadow: 0 0 20px lighten($secondary-color, 20%);
+			}
+		}
+		.fab, .fas {
+			transition-property: color, text-shadow;
+			transition-duration: 0.25s;
+			text-shadow: none;
+		}
+	}
+}

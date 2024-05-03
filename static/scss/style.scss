@@ -1,0 +1,65 @@
+// 'style.scss'
+
+@import 'defaultVariables';
+
+@import 'normalize/import-now';
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: $serif-font;
+	background-color: $white-color;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $sans-serif-font;
+		font-weight: normal;
+	}
+
+	a {
+		color: $primary-color;
+		&:hover {
+			color: $secondary-color;
+			transition: color 0.25s;
+		}
+		transition: color 0.25s;
+	}
+}
+
+.center-x {
+	margin-left: auto;
+	margin-right: auto;
+}
+.center-y {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+body {
+	@import 'grid';
+	font-family: $serif-font;
+	
+	@import 'header';
+	@import 'navbar';
+
+	@import 'homeStyle';
+	@import 'aboutStyle';
+	@import 'testimonialsStyle';
+	@import 'contactStyle';
+
+	section {
+		h2 {
+			font-size: 2rem;
+		}
+		p, div {
+			font-size: 1.3rem;
+		}
+
+		&.full-height {
+			padding: 1em;
+			border-radius: 2px;
+		}
+	}
+}
+
+
+@import 'footer'
