@@ -655,7 +655,7 @@ body section#work > div ul.recognition {
 }
 body section#work > div div.trailer {
   grid-column: 1/5;
-  justify-items: center;
+  justify-self: center;
 }
 body section#work > div div.separator {
   grid-column: 2/4;
